@@ -9,11 +9,9 @@ import google.generativeai as genai
 load_dotenv()
 
 # Configure Google Generative AI with your API key
-# genai.configure(api_key='AIzaSyDEGqfpIgC2ACm28yQ0uRk8eSkvLPnQmx4')
 genai.configure(api_key=os.getenv("GENAI_API_KEY"))
 
 # # RapidAPI credentials
-# rapidapi_key = "7e41043a1fmsh27ea57967dcbc9ap1bc07djsnc5a96cb6f9b6"
 rapidapi_key = os.getenv("RAPIDAPI_KEY")
 
 rapidapi_host = "youtube-v31.p.rapidapi.com"
